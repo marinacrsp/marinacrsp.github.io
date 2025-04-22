@@ -124,18 +124,18 @@ a:hover {
 
 
 /* EXPERIENCE */
-.paper-list {
+.proj-list {
   max-width: 900px;
   margin: 0 auto;
   padding: 2rem;
 }
 
-.paper-list h1 {
+.proj-list h1 {
   font-size: 30px;
   margin-bottom: 10px;
 }
 
-.paper-entry {
+.proj-entry {
   display: flex;
   align-items: flex-start;
   gap: 20px;
@@ -146,54 +146,50 @@ a:hover {
   margin-bottom: 30px;
 }
 
-.paper-thumb img {
+.proj-thumb img {
   width: 280px;
   height: auto;
   border-radius: 8px;
   box-shadow: 0 1px 4px rgba(0,0,0,0.1);
 }
 
-.paper-details {
+.proj-details {
   flex: 1;
 }
 
-.paper-title {
+.proj-title {
   margin: 0;
-  font-size: 1.1rem;
+  font-size: 0.95rem;
   font-weight: 600;
   line-height: 1.4;
 }
 
-.paper-authors {
+.proj-content {
   margin: 8px 0;
-  font-size: 0.95rem;
+  font-size: 0.80rem;
   color: #333;
 }
 
-.paper-authors a {
+.proj-content a {
   text-decoration: none;
   color: #444;
   border-bottom: 1px dotted #aaa;
 }
 
-.faded-author {
-  color: #999;
-}
-
-.paper-venue {
+.proj-venue {
   font-size: 0.95rem;
   color: #444;
   margin-bottom: 10px;
 }
 
-.paper-links {
+.proj-links {
   display: flex;
   flex-wrap: wrap; 
   gap: 10px;
   margin-top: 15px;
 }
 
-.paper-button {
+.proj-button {
   display: inline-block;
   font-size: 0.8rem;
   text-transform: uppercase;
@@ -207,7 +203,7 @@ a:hover {
   transition: background 0.2s ease;
 }
 
-.paper-button:hover {
+.proj-button:hover {
   background: #ccc;
 }
 
