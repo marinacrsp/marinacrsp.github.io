@@ -159,14 +159,14 @@ a:hover {
 
 .proj-title {
   margin: 0;
-  font-size: 0.95rem;
+  font-size: 1.1rem;
   font-weight: 600;
   line-height: 1.4;
 }
 
 .proj-content {
   margin: 8px 0;
-  font-size: 0.80rem;
+  font-size: 0.95rem;
   color: #333;
 }
 
