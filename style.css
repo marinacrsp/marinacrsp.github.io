@@ -124,66 +124,93 @@ a:hover {
 
 
 /* EXPERIENCE */
-.pub-list {
+.proj-list {
   max-width: 900px;
   margin: 0 auto;
   padding: 2rem;
 }
-.pub-list h1 {
+
+.proj-list h1 {
   font-size: 30px;
   margin-bottom: 10px;
 }
-.pub-card {
-  background: #fff;
+
+.proj-entry {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
   padding: 20px;
+  background: #fff;
   border-radius: 12px;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
-  max-width: 900px;
-  margin: 20px auto;
+  margin-bottom: 30px;
 }
 
-.pub-title {
-  font-size: 0.95rem;
-  margin-bottom: 12px;
-}
-
-.pub-title a {
-  text-decoration: none;
-  color: #333;
-  font-weight: 600;
-}
-.pub-title a:hover {
-  text-decoration: underline;
-}
-
-.pub-content {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-}
-
-.pub-thumb img {
-  width: 280;
-  /* 200px; */
-  max-height: 220;
-  /* 200px; */
-  object-fit: cover;
+.proj-thumb img {
+  width: 280px;
+  height: auto;
   border-radius: 8px;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
 }
 
-.pub-description {
+.proj-details {
   flex: 1;
-  display: flex;
-  align-items: center;
 }
 
-.pub-description p {
+.proj-title {
   margin: 0;
-  font-size: 0.80rem;
-  color: #333;
-  line-height: 1.6;
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1.4;
 }
+
+.proj-authors {
+  margin: 8px 0;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.proj-authors a {
+  text-decoration: none;
+  color: #444;
+  border-bottom: 1px dotted #aaa;
+}
+
+.proj-author {
+  color: #999;
+}
+
+.proj-venue {
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.proj-links {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.proj-button {
+  display: inline-block;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 6px 12px;
+  background: #eee;
+  color: #222;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.proj-button:hover {
+  background: #ccc;
+}
+
 
 /* ACADEMIC PAPERS */
 .paper-list {
