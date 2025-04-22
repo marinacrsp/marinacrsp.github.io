@@ -1,0 +1,352 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #111;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: #555;
+  text-decoration: underline;
+}
+a:hover {
+  color: #000;
+}
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: right;
+  background:white; /* semi-transparent white */
+  backdrop-filter: blur(10px); /* glass effect */
+  padding: 15px 30px;
+  color: #333;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.navbar a {
+  color:  #333;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* .navbar a:hover {
+  text-decoration: underline;
+} */
+
+#progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 4px;  /* you can reduce to 2px if you want it subtler */
+  background: #c356ff;  /* or your brand color */
+  z-index: 9999;
+  transition: width 0.25s ease-out;
+}
+
+/* Intro_1 */
+
+.intro-flex {
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 1200px;
+  padding: 50px;
+  flex-wrap: wrap;
+}
+
+.profile-block {
+  text-align: center;
+  max-width: 300px;
+  flex-shrink: 0;
+}
+
+.profile-img {
+  width: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-info p {
+  margin: 4px 0;
+}
+
+.about {
+  max-width: 900px;
+  flex: 1;
+}
+
+.about h1 {
+  font-size: 30px;
+  margin-top: 0px;
+}
+
+.socials {
+  margin-top: 15px;
+} 
+
+.socials a {
+  text-decoration: none;     
+  margin: 0 6px;            
+  display: inline-block;     
+}
+.socials a img {
+  width: 24px;
+  vertical-align: middle;
+  filter: none;              
+}
+
+@media (max-width: 768px) {
+  .intro-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about {
+    text-align: left;
+    padding-top: 20px;
+  }
+}
+
+
+/* EXPERIENCE */
+.pub-list {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+.pub-list h1 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.pub-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+  max-width: 900px;
+  margin: 20px auto;
+}
+
+.pub-title {
+  font-size: 0.95rem;
+  margin-bottom: 12px;
+}
+
+.pub-title a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+}
+.pub-title a:hover {
+  text-decoration: underline;
+}
+
+.pub-content {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.pub-thumb img {
+  width: 280;
+  /* 200px; */
+  max-height: 220;
+  /* 200px; */
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+
+.pub-description {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.pub-description p {
+  margin: 0;
+  font-size: 0.80rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ACADEMIC PAPERS */
+.paper-list {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.paper-list h1 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.paper-entry {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+  margin-bottom: 30px;
+}
+
+.paper-thumb img {
+  width: 280px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+.paper-details {
+  flex: 1;
+}
+
+.paper-title {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.paper-authors {
+  margin: 8px 0;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.paper-authors a {
+  text-decoration: none;
+  color: #444;
+  border-bottom: 1px dotted #aaa;
+}
+
+.faded-author {
+  color: #999;
+}
+
+.paper-venue {
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.paper-links {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.paper-button {
+  display: inline-block;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 6px 12px;
+  background: #eee;
+  color: #222;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.paper-button:hover {
+  background: #ccc;
+}
+
+
+/* CONFERENCES */
+.conf-list {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.conf-list h1 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.conf-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+  margin-bottom: 30px;
+}
+
+.conf-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.conf-title {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #222;
+  line-height: 1.4;
+}
+
+.conf-authors {
+  margin: 8px 0;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.conf-authors a {
+  text-decoration: none;
+  color: #444;
+  border-bottom: 1px dotted #aaa;
+}
+
+.faded-author {
+  color: #999;
+}
+
+.conf-venue {
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.conf-links {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.conf-button {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 6px 12px;
+  background: #eee;
+  color: #222;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.conf-button:hover {
+  background: #ccc;
+}
