@@ -216,7 +216,7 @@ a:hover {
 }
 
 .paper-list h1 {
-  font-size: 30px;
+  font-size: 28px;
   margin-bottom: 10px;
 }
 
@@ -251,7 +251,7 @@ a:hover {
 
 .paper-authors {
   margin: 8px 0;
-  font-size: 0.95rem;
+  font-size: 0.85rem;
   color: #333;
 }
 
@@ -266,7 +266,7 @@ a:hover {
 }
 
 .paper-venue {
-  font-size: 0.95rem;
+  font-size: 0.85rem;
   color: #444;
   margin-bottom: 10px;
 }
@@ -305,7 +305,7 @@ a:hover {
 }
 
 .conf-list h1 {
-  font-size: 30px;
+  font-size: 28px;
   margin-bottom: 10px;
 }
 
