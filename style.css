@@ -329,3 +329,17 @@ a:hover {
 .conf-button:hover {
   background: #ccc;
 }
+
+@media (max-width: 768px) {
+  .conf-list {
+    padding: 1rem;
+  }
+  .conf-details {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .conf-title {
+    font-size: 1rem;
+  }
+}
