@@ -44,13 +44,13 @@ a:hover {
 
 @media (max-width: 768px) {
   .navbar {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     padding: 10px;
   }
 
   .navbar a {
-    margin: 10px 0;  /* More vertical spacing */
+    margin: 10px 10px;  /* More vertical spacing */
     font-size: 1rem;  /* Slightly larger for touch screens */
   }
 }
