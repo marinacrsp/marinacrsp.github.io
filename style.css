@@ -211,6 +211,35 @@ a:hover {
   background: #ccc;
 }
 
+@media (max-width: 768px) {
+  .paper-entry {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .paper-list {
+    padding: 1rem;
+  }
+  .paper-title {
+    font-size: 1rem;
+  }
+  .paper-authors, .paper-venue {
+    font-size: 0.8rem;
+  }
+  .paper-thumb img {
+    width: 90%;   /* Make image responsive */
+    max-width: 300px;
+  }
+
+  .paper-details {
+    padding-top: 15px;
+  }
+
+  .paper-links {
+    justify-content: center;
+  }
+}
+
 
 /* CONFERENCES */
 .conf-list {
