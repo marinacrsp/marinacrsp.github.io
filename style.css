@@ -335,7 +335,7 @@ a:hover {
 /* NEW BADGE */
 .new-badge {
   display: inline-block;
-  background: linear-gradient(135deg, #ff6b6b 0%, #ff5252 100%);
+  background: linear-gradient(135deg, #8d5bb0 0%, #8e6aa8 100%);
   color: white;
   font-size: 0.65rem;
   font-weight: 700;
