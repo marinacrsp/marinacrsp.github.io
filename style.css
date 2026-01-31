@@ -340,7 +340,7 @@ a:hover {
 /* NEW BADGE */
 .new-badge {
   display: inline-block;
-  background: linear-gradient(135deg, #f3e1ff 0%, #8e6aa8 100%);
+  background: #8e6aa8;
   color: white;
   font-size: 0.8rem;
   font-weight: 700;
@@ -349,7 +349,7 @@ a:hover {
   padding: 4px 8px;
   border-radius: 3px;
   margin-left: 8px;
-  animation: pulse 2s infinite;
+  box-shadow: 0 2px 12px rgba(206, 175, 255, 0.379);
 }
 
 @keyframes pulse {
