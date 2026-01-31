@@ -178,6 +178,14 @@ a:hover {
   line-height: 1.4;
 }
 
+.paper-date {
+  margin: 6px 0 12px 0;
+  font-size: 0.5rem;
+  color: #666;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}
+
 .paper-authors {
   margin: 8px 0;
   font-size: 0.85rem;
@@ -227,6 +235,11 @@ a:hover {
 
 @media (max-width: 768px) {
   .paper-entry {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .paper-date {
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -337,7 +350,7 @@ a:hover {
   display: inline-block;
   background: linear-gradient(135deg, #f3e1ff 0%, #8e6aa8 100%);
   color: white;
-  font-size: 0.65rem;
+  font-size: 1rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.8px;
