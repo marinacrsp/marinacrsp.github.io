@@ -332,6 +332,31 @@ a:hover {
   background: #ccc;
 }
 
+/* NEW BADGE */
+.new-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #ff6b6b 0%, #ff5252 100%);
+  color: white;
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  padding: 4px 8px;
+  border-radius: 3px;
+  margin-left: 8px;
+  box-shadow: 0 2px 8px rgba(255, 107, 107, 0.3);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    box-shadow: 0 2px 8px rgba(255, 107, 107, 0.3);
+  }
+  50% {
+    box-shadow: 0 2px 16px rgba(255, 107, 107, 0.6);
+  }
+}
+
 @media (max-width: 768px) {
   .conf-list {
     padding: 1rem;
