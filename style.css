@@ -249,7 +249,14 @@ a:hover {
     width: 90%;   /* Make image responsive */
     max-width: 300px;
   }
-
+  /* Optional: make the GIF feel interactive */
+  .paper-gif {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  .paper-gif:hover {
+  transform: scale(1.02);
+  }
   .paper-details {
     padding-top: 15px;
   }
