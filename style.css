@@ -159,13 +159,15 @@ a:hover {
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
   margin-bottom: 30px;
 }
-
+.paper-thumb {
+  width: 280px;
+  flex-shrink: 0;
+}
 .paper-thumb img {
   width: 280px;
   height: auto;
   border-radius: 8px;
   box-shadow: 0 1px 4px rgba(0,0,0,0.1);
-  display: block;
 }
 
 .paper-details {
@@ -246,18 +248,11 @@ a:hover {
   .paper-authors, .paper-venue {
     font-size: 0.8rem;
   }
-  .paper-thumb img {
-    width: 90%;   /* Make image responsive */
+  .paper-thumb {
+    width: 90%;
     max-width: 300px;
   }
-  /* Optional: make the GIF feel interactive */
-  .paper-gif {
-    cursor: pointer;
-    transition: transform 0.2s ease;
-  }
-  .paper-gif:hover {
-  transform: scale(1.02);
-  }
+
   .paper-details {
     padding-top: 15px;
   }
